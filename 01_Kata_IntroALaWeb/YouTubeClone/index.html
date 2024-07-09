@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6913e8ca1c.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon"
+        href="https://images.vexels.com/media/users/3/141525/isolated/lists/0db05c61c7d85c151b5d9e2321d0e9d9-youtube-icono-redondo-distorsionado.png">
+</head>
+
+<body>
+    <nav>
+        <div class="start">
+            <button class="btn icono-blanco start-elemento"><i class="fa fa-bars"></i></button>
+            <a href="https://www.youtube.com/" class="start-elemento"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53QyQTpAv52GsOzPW0ALeUgowsO22n5Bpds9nMCRM81PuCOc1gww05mUllR5ha_y9UQ&usqp=CAU"
+                    alt="">
+            </a>
+        </div>
+        <div class="center">
+            <input type="search" name="buscar" placeholder="Buscar" id="barra-busqueda">
+            <button class="btn barra-busqueda-btn" id="barra-busqueda-search"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn barra-busqueda-btn" id="barra-busqueda-microfono"><i
+                    class="fa-solid fa-microphone"></i></button>
+        </div>
+        <div class="end">
+            <button class="btn icono-blanco end-elemento"><i class="fa-regular fa-square-plus"></i></button>
+            <button class="btn icono-blanco end-elemento"><i class="fa-regular fa-bell"></i></button>
+            <a href="" class="end-elemento"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt=""
+                    class="img-perfil"></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <div class="guia-general">
+                <!-- De estas entradas son tantas como botones haya -->
+                <div class="entrada-guia" id="entrada-guia-test">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-solid fa-house"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Inicio</p>
+                    </div>
+                </div>
+
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-solid fa-s"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Shorts</p>
+                    </div>
+                </div>
+
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-regular fa-images"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Suscripciones</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-solid fa-headphones-simple"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Youtube Music</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guia-tu">
+                <!-- De estas entradas son tantas como botones haya -->
+                <h3 class="titulo-entrada">Tú</h3>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Tu canal</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-solid fa-clock-rotate-left"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Historial</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Lista reproducción</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-regular fa-file-video"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Mis vídeos</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Ver más tarde</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <button class="btn icono-blanco"><i class="fa-regular fa-thumbs-up"></i></button>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Vídeos que me gustan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guia-suscripciones">
+                <h3 class="titulo-entrada">Suscripciones</h3>
+                <!-- De estas entradas son tantas como botones haya -->
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <a href=""><img class="img-perfil-canal-pequeno" src="https://yt3.ggpht.com/J8uyTv_svUwDsQmZbG7pex12NmrGT1IULvjUChrcSU7GvWXCuVBoPTG7-E-9Tf_w_RmgtqeovQ=s88-c-k-c0x00ffffff-no-rj" alt=""></a>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Chat History</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <a href=""><img class="img-perfil-canal-pequeno" src="https://yt3.ggpht.com/1e9TfRB4TebcV4eK1hHEAS-LejZ_ETLR8OSs9vs7PI2W_KwL44cbSFTmDAHTK69l4E0kAANon70=s88-c-k-c0x00ffffff-no-rj" alt=""></a>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Badlands Chugs</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <a href=""><img class="img-perfil-canal-pequeno" src="https://yt3.ggpht.com/jHpWdf9qWNdrCjxfQxCxR0aiYY9Y1IO7s6Jwlk-OgKxS8nzjEMffakE6mdOdp2u22R3130U0nQ=s88-c-k-c0x00ffffff-no-rj" alt=""></a>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>Soy Dalto</p>
+                    </div>
+                </div>
+                <div class="entrada-guia">
+                    <div class="entrada-div-btn">
+                        <a href=""><img class="img-perfil-canal-pequeno" src="https://yt3.ggpht.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s88-c-k-c0x00ffffff-no-rj" alt=""></a>
+                    </div>
+                    <div class="entrada-div-p">
+                        <p>MrBeast</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <!-- Juegos video -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/mLn450KokiY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC31r2ppomgIEECz-jLWjIM4j50xA"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/tSBtoflbXyOVCdPfxTk1PxRVAHS4D_bNZSa3gxiBTtiqDUm013GatVEPtdIqPHbKNUgiX2g51g=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">JUGOS Y BEBIDAS DE NUESTRA INFANCIA</p>
+                            <p class="texto-gris-chico">Un Peso de Salsa</p>
+                            <p class="texto-gris-chico">180 K visualizaciones - hace 1 año</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Crimenes de peliculas -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/SEIMA-HTAtU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2edet7FFAiUAq1L9GCwDc9Bh_6Q"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/_AI4qNbtKWniMicsouGABEjUgW2naStgjt7NO72_lrNTZOaoUKQU0q6v1aaJ_JtjFL16Td9_=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">El PAÍS con más TIROTEOS en ESCUELAS de la HISTORIA</p>
+                            <p class="texto-gris-chico">El mundo de Zowl</p>
+                            <p class="texto-gris-chico">665 K visualizaciones - hace 4 meses</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Fake tough guys exposed -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/kRzCTvTQ3UI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfIUgjQ-JmBRuNll6DgGzG82WanQ"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/ytc/AIdro_nymQIUm_lxB2NREhUMI0NfroXDP89VqmiRTGfYlk6MVVE=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">Fake "Tough Guys" get EXPOSED #22</p>
+                            <p class="texto-gris-chico">ARAKO TV</p>
+                            <p class="texto-gris-chico">2,1 M de visualizaciones - hace 10 meses</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Ok to love bad people -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/k-UZaJtzp2g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9uI9QFbCgiF4n8kyurRW6VtWkuA"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/kQM-_NcPUFQTJ1L5uVYcQBc9iGjVTYFuBAOitAqaPd1oONOoJuCby8MM-bn5osXqsRUF3RsmAQ=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">it's ok to love bad people</p>
+                            <p class="texto-gris-chico">oliSUNvia</p>
+                            <p class="texto-gris-chico">49 k de visualizaciones - hace 10 horas</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Outlaws in old west -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/3a_TOVpRLNA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOdeMNxvn0DDT7d2_aID71eQBcfg"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/FKvad-fRlimuNfL1abBbQjYjkErWIP21TkbfgDgcJtBPLnFuznVTVAiM3pFOO5PH9jejJKG9aNA=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">The Deadliest Outlaws of the Wild West</p>
+                            <p class="texto-gris-chico">Good Enough</p>
+                            <p class="texto-gris-chico">5,8 K visualizaciones - hace 1 hora</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- First Car -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/brofphmC7GI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZclaDmZVgVW0coI4BzrCohe-dmQ"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/ytc/AIdro_lsMlPXxQcSMI_EveG6eb7sd1T9vFkEQrXKruSjabO_ANY=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">How to PERFECTLY Maintain your First Car</p>
+                            <p class="texto-gris-chico">ChrisFix</p>
+                            <p class="texto-gris-chico">4 M visualizaciones - hace 10 meses</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Just One More Watch -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/HbEv99yNuDk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgnhiTfIeInWmHFFkFDtLkWaT-pg"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/ytc/AIdro_kiq8B08cBi7VV18nlxERihluQRd9NkjkjVu_xsyyxCzA=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">I bougth the Tissot that everyone LOVES to HATE</p>
+                            <p class="texto-gris-chico">Just One More Watch</p>
+                            <p class="texto-gris-chico">30 K visualizaciones - hace 12 días</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Looney Tunes -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/BBlAhhbltic/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDIG4wzN_P0UpT_zSWGc2B6cltPVw"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/2W5r2aWtDPE5M6p4tMmp6ckBJL1we_ibyISGTf1L5Y51NjskyYN9OuPIkCxzTDUseMCTUvKykYI=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">Looney Tunes but it's only memes.</p>
+                            <p class="texto-gris-chico">Spicywolf</p>
+                            <p class="texto-gris-chico">1,2 M visualizaciones - hace 4 meses</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Futuro CDMX -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/sU37oZtntEY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACCuOf1j_nlLJDGbFTXJXfhaZtTw"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/ytc/AIdro_knGwNz1AaeCF9kT0yGM8sJjWp11VXnd36rd0gMkdv63A=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">¿Tiene futuro la CDMX?</p>
+                            <p class="texto-gris-chico">MIGALA</p>
+                            <p class="texto-gris-chico">157 K visualizaciones - hace 6 días</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 100 Casa MR Beast -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/KkCXLABwHP0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhPIF0oZTAP&rs=AOn4CLDw-jbIafKpPbhjBed0T0Z6V65tfw"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">¡Construí 100 Casas Y Las Regalé!</p>
+                            <p class="texto-gris-chico">MrBeast</p>
+                            <p class="texto-gris-chico">55 M visualizaciones - hace 2 días</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- No fight cops -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/y_1yV-bVTc8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnYWqU2Fu4KdFkibgNnC8niPjIIA"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/i0b6xfmZ0cBQPforkWMxb_k_76ZXTLtnerny7sUMIA-V4VuiJi6WMEvhGAhnGMK9MFeN38Bo5w=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">Why You Shouldn't Try To Fight Cops</p>
+                            <p class="texto-gris-chico">Mind Behind The Crime</p>
+                            <p class="texto-gris-chico">9,4 M visualizaciones - hace 8 meses</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Relaxing Music -->
+            <article class="video">
+                <div class="paddingar">
+                    <img src="https://i.ytimg.com/vi/IOj7NJLd5bA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjiw55OPpc0_0VceiH3bpsAvJ6cQ"
+                        alt="" class="video-miniatura">
+                    <div class="pie-pagina">
+                        <div class="fotocanal">
+                            <a href=""><img
+                                    src="https://yt3.ggpht.com/jDHhwrH95USAZM0tcX0stylyEy4J1LIafxK3jIGZ9Ut_noyhsoFmjc6cTbPnKAuNjaiMZ4TruSo=s88-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="img-perfil-canal"></a>
+                        </div>
+                        <div class="titulo-canal-vistas">
+                            <p class="texto-titulo-video">Peaceful Relaxing Music Instrumental Soothing</p>
+                            <p class="texto-gris-chico">Tim Jamis</p>
+                            <p class="texto-gris-chico">190 K visualizaciones - hace 4 años</p>
+                        </div>
+                        <div class="tres-puntitos">
+                            <button class="btn icono-blanco"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+</body>
+
+</html>
